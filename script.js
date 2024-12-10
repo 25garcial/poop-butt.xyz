@@ -1,7 +1,10 @@
-function playChess(){
+async function playChess(){
 let doc=document.createElement("script")
-doc.src="//raw.githubusercontent.com/Logan-Garcia-inc/browser-Chess/refs/heads/main/script.js";
+let script=await fetch("https://raw.githubusercontent.com/Logan-Garcia-inc/browser-Chess/refs/heads/main/script.js");
+script=await script.text()
+doc.textContent=script
 	document.body.append(doc)
-  console.log("sdd")
 }
-document.querySelector(".chessButton").addEventListener("click",playChess)
+
+document.querySelector(".chessButton").addEventListener("click",()=>{
+playChess()})
