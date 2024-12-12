@@ -11,5 +11,4 @@ document.querySelector(".chessButton").addEventListener("click", () => {
   playChess()
 })
 
-for (let i of document.querySelectorAll("img")) {i.src = "https://github.com/25garcial/poop-butt.xyz/blob/main/" +i.src.slice("https://fiddle.jshell.net/_display".length,i.src.length)+"?raw=true"}
 
